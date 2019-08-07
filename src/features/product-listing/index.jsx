@@ -6,7 +6,7 @@ import fetchApi from '../../modules/fetch-api';
 class ProductListing extends Component {
     componentDidMount() {
         const { loadProducts } = this.props
-        fetchApi('get', 'http://127.0.0.1:8887/products.json')
+        fetchApi('get', 'https://api.myjson.com/bins/l3t9l')
             .then((json => {
                 loadProducts(json)
             }))
