@@ -1,41 +1,47 @@
-import React, { Component } from 'react'
+import React from 'react'
 import ProductListItem from './product-list-item';
 import { connect } from 'react-redux';
 import fetchApi from '../../modules/fetch-api';
 
-class ProductListing extends Component {
+class ProductListing extends React.Component {
+
     componentDidMount() {
         const { loadProducts } = this.props
-        fetchApi('get', 'https://api.myjson.com/bins/l3t9l')
+        fetchApi('get', 'http://localhost:8003/products/')
             .then((json => {
                 loadProducts(json)
             }))
         console.log(loadProducts)
     }
-
     render() {
-        const { addToCart, removeFromCart, cart, products } = this.props
+        const { products, cart, addToCart, removeFromCart } = this.props
         return (
-            <div className="product-listing" >
+            <div className="container">
                 {
                     products.map(product =>
-                        <ProductListItem
-                            product={product}
-                            key={product.id}
-                            addToCart={addToCart}
-                            removeFromCart={removeFromCart}
-                            cartItem={cart.filter(cartItem => cartItem.id === product.id)[0]}
-                        />
+                        
+                        <div className="row">
+                            <div className="col-md-4">
+                                <div className="card">
+                                    <ProductListItem
+                                        className="card"
+                                        product={product}
+                                        key={product.id}
+                                        addToCart={addToCart}
+                                        removeFromCart={removeFromCart}
+                                        cartItem={cart.filter(cartItem => cartItem.id === product.id)[0]}
+                                    />
+                                </div>
+                            </div>
+                        </div>
                     )
                 }
-
-
             </div>
-        )
+        );
     }
 
-}
 
+}
 
 function mapStateToProps(state) {
     return {

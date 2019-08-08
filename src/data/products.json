@@ -1,87 +1,79 @@
 {
     "products": [
         {
-            "Mobiles": [
-                {
-                    "id": 1,
-                    "name": "I-phone-XS",
-                    "title": "Apple I phone XS 128Gb",
-                    "price": 97990,
-                    "color": "Pearl Black",
-                    "image": "i-phone-xs.jpg",
-                    "features": "8gb-ram IOS-11 16Mp-Primary camera"
-                },
-                {
-                    "id": 2,
-                    "name": "Galaxy A10",
-                    "title": "Samsung Galaxy A10 256 GB",
-                    "price": "80000 Rs",
-                    "color": "Silky Black",
-                    "image": "samsung_s10_black.jpg",
-                    "features": "8gb-ram Android PI-9.2.1 Quad Camers Snapdragon-855 48MP Primary-Camera"
-                },
-                {
-                    "id": 3,
-                    "name": "OnePlus 7-Pro",
-                    "title": "One Plus 7 Pro 512 GB",
-                    "price": 55990,
-                    "image": "oneplus7pro.jpg",
-                    "color": "Nebula Blue",
-                    "features": "12Gb-ram Snapdragon 855 Triple Camers with 48MP Primary 10X-optic zoom"
-                }
-            ],
-            "Tv": [
-                {
-                    "id": 4,
-                    "name": "Sony Bravia",
-                    "title": "Sony Bravia AMOLED 4KHD Android-TV 55-inch",
-                    "price": 120000,
-                    "image": "sony-bravia.jpg",
-                    "features": "4GB ROM 55-inch Amoled display Access to Netflix,Prime"
-                },
-                {
-                    "id": 5,
-                    "name": "MI-LED TV 45-inch",
-                    "title": "MI - LED Smart TV 45-inch",
-                    "price": 33000,
-                    "image": "mi-tv.jpg",
-                    "features": ""
-                },
-                {
-                    "id": 6,
-                    "name": "Samsung UHD TV",
-                    "title": "Samsung UHD Curved TV",
-                    "price": 75000,
-                    "image": "samsung-tv.jpg",
-                    "features": "Ultra HD TV with curved Screen 55-inch"
-                }
-            ],
-            "Watches": [
-                {
-                    "id": 7,
-                    "name": "fastrack-sport",
-                    "title": "Fastrack Sport Gear watch",
-                    "price": 4500,
-                    "image": "fastrack-watch.jpg",
-                    "features": "Sport Watch with sweat and water Proof of Dual Clock International 3 Time Zones"
-                },
-                {
-                    "id": 8,
-                    "name": "MI-Band-4",
-                    "title": "MI Band-4 Smart fit fitness tracker",
-                    "price": 2500,
-                    "image": "mi-band.jpg",
-                    "features": "Band-4 comes with Color LED dispaly Track Heart-beat steps of the day sleep monitor, attend calls and view messages with band-4 "
-                },
-                {
-                    "id": 9,
-                    "name": "Fossil-Watch",
-                    "title": "Fossil Smart Watch",
-                    "price": 10000,
-                    "image": "fossil-watch.jpg",
-                    "features": "Smart Watch with fitness tracker Anlog-display"
-                }
-            ]
+            "id": 1,
+            "name": "I-phone-XS",
+            "title": "Apple I phone XS 128Gb",
+            "price": 97990,
+            "color": "Pearl Black",
+            "src": "../assest/i-phone-xs.jpg",
+            "features": "8gb-ram IOS-11 16Mp-Primary camera"
+        },
+        {
+            "id": 2,
+            "name": "Galaxy A10",
+            "title": "Samsung Galaxy A10 256 GB",
+            "price": "80000 Rs",
+            "color": "Silky Black",
+            "src": "../assest/samsung_s10_black.jpg",
+            "features": "8gb-ram Android PI-9.2.1 Quad Camers Snapdragon-855 48MP Primary-Camera"
+        },
+        {
+            "id": 3,
+            "name": "OnePlus 7-Pro",
+            "title": "One Plus 7 Pro 512 GB",
+            "price": 55990,
+            "src": "../assest/oneplus7pro.jpg",
+            "color": "Nebula Blue",
+            "features": "12Gb-ram Snapdragon 855 Triple Camers with 48MP Primary 10X-optic zoom"
+        },
+        {
+            "id": 4,
+            "name": "Sony Bravia",
+            "title": "Sony Bravia AMOLED 4KHD Android-TV 55-inch",
+            "price": 120000,
+            "src": "../assest/sony-bravia.jpg",
+            "features": "4GB ROM 55-inch Amoled display Access to Netflix,Prime"
+        },
+        {
+            "id": 5,
+            "name": "MI-LED TV 45-inch",
+            "title": "MI - LED Smart TV 45-inch",
+            "price": 33000,
+            "src": "../assest/mi-tv.jpg",
+            "features": ""
+        },
+        {
+            "id": 6,
+            "name": "Samsung UHD TV",
+            "title": "Samsung UHD Curved TV",
+            "price": 75000,
+            "src": "../assest/samsung-tv.jpg",
+            "features": "Ultra HD TV with curved Screen 55-inch"
+        },
+        {
+            "id": 7,
+            "name": "fastrack-sport",
+            "title": "Fastrack Sport Gear watch",
+            "price": 4500,
+            "src": "../assest/fastrack-watch.jpg",
+            "features": "Sport Watch with sweat and water Proof of Dual Clock International 3 Time Zones"
+        },
+        {
+            "id": 8,
+            "name": "MI-Band-4",
+            "title": "MI Band-4 Smart fit fitness tracker",
+            "price": 2500,
+            "src": "../assest/mi-band.jpg",
+            "features": "Band-4 comes with Color LED dispaly Track Heart-beat steps of the day sleep monitor, attend calls and view messages with band-4 "
+        },
+        {
+            "id": 9,
+            "name": "Fossil-Watch",
+            "title": "Fossil Smart Watch",
+            "price": 10000,
+            "src": "../assest/fossil-watch.jpg",
+            "features": "Smart Watch with fitness tracker Anlog-display"
         }
     ]
 }

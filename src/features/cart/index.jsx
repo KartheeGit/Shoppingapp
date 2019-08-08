@@ -4,18 +4,20 @@ import { connect } from 'react-redux';
 function sort(items) {
     return items.sort((a, b) => a.id < b.id)
 }
-
 const Cart = (props) => {
     return (
         <div>
-            <table>
-                <thead>
+            <table className="table table-hover" >
+                <thead className="thead-light">
                     <tr>
-                        <th>
+                        <th scope="col">
                             Product Name
                         </th>
-                        <th>Quantity </th>
-                        <th>Price </th>
+                        <th scope="col">Quantity </th>
+                        <th scope="col">Price </th>
+                        <th scope="col"> Add</th>
+                        <th scope="col"> Remove</th>
+                        <th scope="col"> </th>
                     </tr>
                 </thead>
                 <tbody>
@@ -25,19 +27,18 @@ const Cart = (props) => {
                             <td className="align-center">{item.quantity}</td>
                             <td>{item.price}</td>
                             <td>
-                                <button onClick={() => props.addToCart(item)}> + </button>
+                                <button className="btn btn-secondary" onClick={() => props.addToCart(item)}> + </button>
                             </td>
                             <td>
-                                <button onClick={() => props.removeFromCart(item)}> - </button>
+                                <button className="btn btn-warning" onClick={() => props.removeFromCart(item)}> - </button>
                             </td>
                             <td>
-                                <button onClick={() => props.removeAllFromCart(item)}>
+                                <button className="btn btn-danger" onClick={() => props.removeAllFromCart(item)}>
                                     Remove all Items
                                 </button>
                             </td>
                         </tr>)
                     }
-
                 </tbody>
             </table>
         </div>
